@@ -1,0 +1,139 @@
+Question 1: The Command Pattern encapsulates requests as objects.  
+Options: True / False  
+Answer: True
+
+Question 2: What can be treated uniformly using the Command Pattern?  
+Options: Only singleton objects / Different requests / Only arrays / Primitive data types  
+Answer: Different requests
+
+Question 3: In the Command Pattern, what does the Invoker do?  
+Options: Creates all receiver objects / Triggers the command execution / Implements business logic directly / Stores application configuration  
+Answer: Triggers the command execution
+
+Question 4: What is the main intent of the Command Pattern?  
+Options: Create families of related objects / Encapsulate a request as an object / Separate interface from implementation / Provide a simplified interface  
+Answer: Encapsulate a request as an object
+
+Question 5: Which design principle is strongly supported by the Command Pattern?  
+Options: Program to implementation / Favor global variables / Encapsulate what varies / Avoid abstraction  
+Answer: Encapsulate what varies
+
+Question 6: Which participant actually executes the requested operation?  
+Options: Invoker / Client / Receiver / Proxy  
+Answer: Receiver
+
+Question 7: Which statement about the Command Pattern is true?  
+Options: It replaces all behavioral patterns / It eliminates the need for interfaces / It decouples the requester from the object performing the action / It requires only one class in the design  
+Answer: It decouples the requester from the object performing the action
+
+Question 8: A command object usually contains what?  
+Options: A network socket / A compiler parser / A reference to a receiver / A database driver  
+Answer: A reference to a receiver
+
+Question 9: Which component knows how to perform the requested action?  
+Options: Invoker / Receiver / Client / Adapter  
+Answer: Receiver
+
+Question 10: Why is the Command Pattern useful for undo operations?  
+Options: It avoids method calls / Commands can store previous state information / It prevents inheritance / It removes the need for objects  
+Answer: Commands can store previous state information
+
+Question 11: The Invoker directly performs the business logic.  
+Options: True / False  
+Answer: False
+
+Question 12: Which pattern category does the Command Pattern belong to?  
+Options: Creational / Behavioral / Structural / Architectural  
+Answer: Behavioral
+
+Question 13: Which participant may maintain a history of executed commands?  
+Options: Decorator / Invoker / Receiver / Adapter  
+Answer: Invoker
+
+Question 14: What is a common disadvantage of the Command Pattern?  
+Options: Impossible testing / Lack of abstraction / Increased number of classes / No support for polymorphism  
+Answer: Increased number of classes
+
+Question 15: Undo functionality can be implemented using the Command Pattern.  
+Options: True / False  
+Answer: True
+
+Question 16: What is the role of a ConcreteCommand?  
+Options: Replace inheritance completely / Implement execute and invoke receiver actions / Store user interface themes / Create all receivers dynamically  
+Answer: Implement execute and invoke receiver actions
+
+Question 17: Which scenario is a good use case for the Command Pattern?  
+Options: Replacing all loops in a program / GUI menu and button actions / Simple arithmetic calculations only / Encrypting network traffic  
+Answer: GUI menu and button actions
+
+Question 18: What problem does the Command Pattern mainly solve?  
+Options: Database normalization / Memory allocation / Tight coupling between sender and receiver / Network latency  
+Answer: Tight coupling between sender and receiver
+
+Question 19: What is usually declared in the Command interface?  
+Options: A constructor / A static factory method / A finalize method / An execute method  
+Answer: An execute method
+
+Question 20: A Receiver contains the actual implementation of operations.  
+Options: True / False  
+Answer: True
+
+Question 21: How are commands typically triggered in applications?  
+Options: Only during compilation / Through user actions or events / Only by constructors / Through garbage collection  
+Answer: Through user actions or events
+
+Question 22: Which feature is easier to implement using the Command Pattern?  
+Options: Compiler optimization / Database indexing / Macro commands / Memory garbage collection  
+Answer: Macro commands
+
+Question 23: ConcreteCommand objects usually implement the Command interface.  
+Options: True / False  
+Answer: True
+
+Question 24: In a remote-control example, the remote buttons are examples of what?  
+Options: Receivers / Factories / Invokers / Observers  
+Answer: Invokers
+
+Question 25: What does encapsulating a request mean?  
+Options: Packaging request details into an object / Storing data in global memory / Converting objects to primitives / Removing all methods  
+Answer: Packaging request details into an object
+
+Question 26: Why does the Command Pattern support loose coupling?  
+Options: Objects cannot communicate directly / Inheritance is forbidden / The invoker does not need to know receiver details / All methods become static  
+Answer: The invoker does not need to know receiver details
+
+Question 27: Which relationship exists between a ConcreteCommand and a Receiver?  
+Options: The receiver inherits the command / The command references the receiver / The receiver creates the command interface / The command destroys the receiver  
+Answer: The command references the receiver
+
+Question 28: The Command Pattern belongs to the creational category.  
+Options: True / False  
+Answer: False
+
+Question 29: Which participant typically calls execute on a command object?  
+Options: Invoker / Receiver / ConcreteCommand / Factory  
+Answer: Invoker
+
+Question 30: Which object contains the actual business logic in the Command Pattern?  
+Options: Invoker / Client / Receiver / Interface  
+Answer: Receiver
+
+Question 31: What is often added to support undo functionality?  
+Options: A static variable / An undo method in the command interface / A destructor method / A private constructor  
+Answer: An undo method in the command interface
+
+Question 32: How does the Command Pattern improve extensibility?  
+Options: Inheritance becomes unnecessary / All logic is placed in one class / New commands can be added without modifying existing code / It removes interfaces from the design  
+Answer: New commands can be added without modifying existing code
+
+Question 33: What happens when a new command is introduced?  
+Options: The interface is removed / A new ConcreteCommand class is added / All receivers must inherit from the command / The Invoker must be rewritten completely  
+Answer: A new ConcreteCommand class is added
+
+Question 34: Which participant creates and configures command objects?  
+Options: Receiver / Client / Invoker / Observer  
+Answer: Client
+
+Question 35: What advantage does the Command Pattern provide?  
+Options: Reduced object-oriented design / Flexible and extensible request handling / Guaranteed singleton objects / Elimination of all classes  
+Answer: Flexible and extensible request handling

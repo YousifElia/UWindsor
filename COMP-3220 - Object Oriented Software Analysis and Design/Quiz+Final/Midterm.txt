@@ -1,0 +1,295 @@
+## Multiple Choice Questions
+
+Question 1: The Factory Pattern primarily addresses:
+Options: Object Persistence / Object Creation / Object Synchronization / Object Communication
+Answer: Object Creation
+
+Question 2: Which pattern allows responsibilities or behaviors to be added to an object dynamically at runtime?
+Options: Singleton / A. Factory / Decorator / Observer
+Answer: Decorator
+
+Question 3: The Observer Pattern establishes what type of relationship?
+Options: Many-to-One / One-to-One / Many-to-Many / One-to-Many
+Answer: One-to-Many
+
+Question 4: Which Factory-related pattern creates families of related objects?
+Options: Simple Factory / Observer / Abstract Factory / Singleton
+Answer: Abstract Factory
+
+Question 5: Which participant in the Observer Pattern maintains the list of observers?
+Options: Subject / Client / Concrete Observer / Observer
+Answer: Subject
+
+Question 6: In the Decorator Pattern, functionality is primarily added through:
+Options: Composition / Static Methods / Inheritance / Constructors
+Answer: Composition
+
+Question 7: Which principle states that software entities should be open for extension but closed for modification?
+Options: Dependency Inversion Principle / Open-Closed Principle / Single Responsibility Principle / Interface Segregation Principle
+Answer: Open-Closed Principle
+
+Question 8: Which statement best describes the Dependency Inversion Principle?
+Options: Depend on abstractions rather than concretions / Use inheritance whenever possible / Depend on concrete classes / Avoid interfaces
+Answer: Depend on abstractions rather than concretions
+
+Question 9: Which pattern is commonly used in GUI event systems?
+Options: Factory / Observer / Singleton / Adapter
+Answer: Observer
+
+Question 10: What is the main purpose of a Singleton?
+Options: Encapsulate algorithms / Ensure one instance exists / Notify observers / Improve inheritance
+Answer: Ensure one instance exists
+
+Question 11 (2 points): Consider the following code:
+```java
+interface Shape { }
+class Circle implements Shape { }
+class Rectangle implements Shape { }
+class ShapeFactory {
+   public static Shape createShape(String type) {
+      if(type.equals("Circle"))
+         return new Circle();
+      else
+         return new Rectangle();
+   }
+}
+```
+Which design pattern is being used?
+Answer: Factory Pattern (specifically, a Simple Factory variant)
+
+Question 12: Consider the following code:
+```java
+interface Spectator {
+   void update();
+}
+class Subject {
+   private List<Spectator> spectators;
+   public void attach(Spectator s) {
+      spectators.add(s);
+   }
+   public void notifySpectators() {
+      for(Spectator s : spectators)
+         s.update();
+   }
+}
+```
+Which design pattern is being used?
+Options: Observer Pattern / Singleton Pattern / Decorator Pattern / Factory Pattern
+Answer: Observer Pattern
+
+Question 13: Consider the following code:
+```java
+interface Coffee {
+    String getDescription();
+}
+class SimpleCoffee implements Coffee {
+    public String getDescription() {
+        return "Coffee";
+    }
+}
+class MilkDecorator implements Coffee {
+    private Coffee coffee;
+    public MilkDecorator(Coffee coffee) {
+        this.coffee = coffee;
+    }
+    public String getDescription() {
+        return coffee.getDescription() + ", Milk";
+    }
+}
+```
+Which design pattern is being used?
+Options: Factory Pattern / Observer Pattern / Singleton Pattern / Decorator Pattern
+Answer: Decorator Pattern
+
+Question 14: A Subject may have multiple observers attached simultaneously.
+Options: True / False
+Answer: True
+
+Question 15: The Singleton constructor is typically public.
+Options: True / False
+Answer: False
+
+Question 16: Factory Pattern increases coupling between clients and concrete classes.
+Options: True / False
+Answer: False
+
+Question 17: The Decorator Pattern completely eliminates the use of inheritance in object-oriented design.
+Options: True / False
+Answer: False
+
+## Short / Long Answer Questions
+
+Question 18: Consider the following code:
+```java
+public interface Coffee {
+    double cost();
+}
+public class BasicCoffee implements Coffee {
+    public double cost() {
+        return 2.0;
+    }
+}
+```
+Suppose we want to support optional add-ons such as Milk, Sugar, Whipped Cream without creating classes like `CoffeeWithMilk`, `CoffeeWithSugar`, `CoffeeWithMilkAndSugar`, `CoffeeWithMilkAndWhippedCream`, etc.
+
+Tasks:
+a) Identify the design problem. (2 marks)
+b) Which design pattern would improve this design? (2 marks)
+c) Describe the classes involved after the proper design pattern applied. (3 marks)
+
+Answer:
+a) The design problem is class explosion (combinatorial explosion). Using inheritance for every combination of condiments creates a huge number of subclasses, making the system rigid and violating the Open-Closed Principle.
+
+b) The Decorator Pattern would improve this design.
+
+c) After applying the Decorator Pattern:
+- Component: `Coffee` interface with `cost()`.
+- Concrete Component: `BasicCoffee` implements `Coffee`.
+- Abstract Decorator: `CoffeeDecorator` implements `Coffee` and holds a reference to a `Coffee` object.
+- Concrete Decorators: `MilkDecorator`, `SugarDecorator`, `WhippedCreamDecorator` extend `CoffeeDecorator` and add their own cost.
+- Client: Wraps `BasicCoffee` with decorators at runtime, e.g., `new WhippedCreamDecorator(new MilkDecorator(new BasicCoffee()))`.
+
+---
+
+Question 19: Suppose you are building a notification system that supports Email notifications and SMS notifications. Complete the following code skeleton using the Factory Pattern.
+```java
+public interface Notification {
+    void send(String message);
+}
+public class EmailNotification implements Notification {
+    // complete this
+}
+public class SMSNotification implements Notification {
+    // complete this
+}
+public class NotificationFactory {
+    public static Notification createNotification(String type) {
+        // complete this
+    }
+}
+```
+
+Answer:
+```java
+public interface Notification {
+    void send(String message);
+}
+
+public class EmailNotification implements Notification {
+    @Override
+    public void send(String message) {
+        System.out.println("Sending Email: " + message);
+    }
+}
+
+public class SMSNotification implements Notification {
+    @Override
+    public void send(String message) {
+        System.out.println("Sending SMS: " + message);
+    }
+}
+
+public class NotificationFactory {
+    public static Notification createNotification(String type) {
+        if (type == null) {
+            return null;
+        }
+        if (type.equalsIgnoreCase("EMAIL")) {
+            return new EmailNotification();
+        } else if (type.equalsIgnoreCase("SMS")) {
+            return new SMSNotification();
+        } else {
+            throw new IllegalArgumentException("Unknown notification type: " + type);
+        }
+    }
+}
+```
+
+---
+
+Question 20: In the Weather Station example from the Observer Pattern:
+a) What is the role of the Subject?
+b) What is the role of the Observer?
+c) Why is this design preferred over directly updating displays?
+
+Answer:
+a) The Subject (e.g., `WeatherData`) holds the weather data and a list of observers. When its data changes, it automatically notifies all registered observers by calling their `update()` method.
+
+b) The Observer (e.g., a display screen) registers with the Subject and waits for updates. When notified, it fetches the new data and updates itself (e.g., refreshes the screen).
+
+c) This design is preferred because it's loosely coupled:
+- You can add, remove, or replace displays anytime without changing the `WeatherData` class.
+- It makes the system flexible, easier to extend, and follows the Open-Closed Principle.
+
+Follow-up: Simplify
+Answer:
+a) Subject holds data and a list of observers. When data changes, it notifies all observers.
+b) Observer registers with Subject, waits for updates, then updates itself.
+c) Loosely coupled: you can add/remove displays without changing `WeatherData`.
+
+Follow-up: Does a.) call the `.update()`?
+Answer: Yes. The Subject loops through its list and calls `.update()` on every observer. Example:
+```java
+public void notifySpectators() {
+    for(Spectator s : spectators)
+        s.update();
+}
+```
+
+Follow-up: How does the observer refresh the screen?
+Answer: Inside its `update()` method, the Observer stores the new data and then calls its own `display()` method to redraw the screen. The Subject only passes the data; the Observer handles its own refresh.
+
+---
+
+Question 21: State the Open-Closed Principle and explain how the Decorator Pattern supports it. Give an example.
+
+Answer:
+Open-Closed Principle: Software entities should be open for extension but closed for modification.
+
+How Decorator supports it:
+- Open for extension: You can add new functionality by creating new decorator classes.
+- Closed for modification: You never change existing core classes or decorators.
+
+Example (Starbuzz Coffee):
+Without Decorator, adding "Soy" requires modifying `Beverage` or creating many subclasses. With Decorator, you just create:
+```java
+public class SoyDecorator extends CondimentDecorator {
+    public double cost() {
+        return beverage.cost() + 0.40;
+    }
+}
+```
+The original `Beverage` class stays untouched, and Soy is added via extension.
+
+Follow-up: Can you simplify?
+Answer:
+Open-Closed Principle: Classes should be open for extension (add new features) but closed for modification (don't change existing code).
+
+Decorator supports it: Add new behavior by creating new decorator classes. Never change original classes.
+
+Example: Create `SoyDecorator` to add soy cost. No need to modify `Beverage` or create many subclasses.
+
+---
+
+Question 22: Compare Factory Pattern and Factory Method Pattern. Discuss: Purpose, Object Creation, Object Behavior.
+
+Answer:
+
+| Aspect | Factory (Simple Factory) | Factory Method |
+| :--- | :--- | :--- |
+| Purpose | Move `new` out of client code into one central place. | Let subclasses decide *which* object to create, while superclass controls *when* and *how* it's used. |
+| Object Creation | One factory class with `if-else` based on a parameter. | Abstract method in superclass; subclasses override to return specific objects. |
+| Object Behavior | Factory just returns object; client uses it directly. | Superclass has a template (e.g., `orderPizza()`) that calls factory method and then runs steps like `prepare()`, `bake()`, `cut()`. |
+
+Follow-up: Simplify
+Answer:
+
+| Aspect | Factory (Simple Factory) | Factory Method |
+| :--- | :--- | :--- |
+| Purpose | Move `new` out of client code into one central place. | Let subclasses decide which object to create, while superclass controls when/how it's used. |
+| Object Creation | One factory class with `if-else` returns the right object based on a parameter. | Abstract method in superclass; each subclass overrides it to return its own object. |
+| Object Behavior | Factory just gives you the object. You do whatever with it. | Superclass has a template (e.g., `orderPizza()`) that calls factory method and automatically does `prepare()`, `bake()`, `cut()`. |
+
+Super Simple Analogy:
+- Factory Pattern = A vending machine. Press a button, get a snack.
+- Factory Method = A fast-food chain. Head office defines steps: "Take order → Cook → Box → Serve." Each local branch decides *how* to cook it. Steps stay same, product changes.

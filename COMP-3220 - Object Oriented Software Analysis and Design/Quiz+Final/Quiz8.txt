@@ -1,0 +1,119 @@
+Question 1: What is a disadvantage of the Template Method Pattern?  
+Options: No support for inheritance / Inheritance can increase coupling / No code reuse / Lack of abstraction  
+Answer: Inheritance can increase coupling
+
+Question 2: What can subclasses do with hook methods?  
+Options: Delete them / Override them if needed / Convert them into interfaces / Make them final  
+Answer: Override them if needed
+
+Question 3: What does the client typically invoke?  
+Options: A hook method / The template method / The constructor directly / A factory method  
+Answer: The template method
+
+Question 4: When should the Template Method Pattern be used?  
+Options: When interfaces are incompatible / When multiple classes share the same algorithm structure / When simplifying a subsystem / When creating object families  
+Answer: When multiple classes share the same algorithm structure
+
+Question 5: What does the template method represent?  
+Options: A constructor / The algorithm skeleton / A hook method / A factory method  
+Answer: The algorithm skeleton
+
+Question 6: Subclasses can change the overall structure of the template method.  
+Options: True / False  
+Answer: False
+
+Question 7: Which participant defines the template method?  
+Options: Abstract Class / Concrete Subclass / Client / Receiver  
+Answer: Abstract Class
+
+Question 8: The Template Method Pattern defines an algorithm skeleton in a superclass.  
+Options: True / False  
+Answer: True
+
+Question 9: What problem is addressed when multiple classes share the same workflow?  
+Options: Code duplication / Memory leaks / Database inconsistency / Network latency  
+Answer: Code duplication
+
+Question 10: Which beverage uses tea leaves and lemon?  
+Options: Tea / Coffee / Both / Neither  
+Answer: Tea
+
+Question 11: Which participant implements the variable steps of the algorithm?  
+Options: Client / Concrete Subclasses / Adapter / Facade  
+Answer: Concrete Subclasses
+
+Question 12: The beverage preparation example uses completely different workflows for tea and coffee.  
+Options: True / False  
+Answer: False
+
+Question 13: Which advantage is provided by the Template Method Pattern?  
+Options: Code reuse / Removal of inheritance / No need for abstraction / Reduced polymorphism  
+Answer: Code reuse
+
+Question 14: What is the primary intent of the Template Method Pattern?  
+Options: Convert one interface into another / Define the skeleton of an algorithm and allow subclasses to customize steps / Simplify access to a subsystem / Encapsulate requests as objects  
+Answer: Define the skeleton of an algorithm and allow subclasses to customize steps
+
+Question 15: What may happen if abstract classes become too large?  
+Options: They become difficult to maintain / They eliminate flexibility / They remove polymorphism / They become interfaces  
+Answer: They become difficult to maintain
+
+Question 16: Which principle is associated with the Template Method Pattern?  
+Options: Law of Demeter / Hollywood Principle / YAGNI Principle / KISS Principle  
+Answer: Hollywood Principle
+
+Question 17: The Template Method Pattern helps reduce duplicated workflow logic.  
+Options: True / False  
+Answer: True
+
+Question 18: According to the Hollywood Principle, what does the superclass do?  
+Options: Controls the execution flow / Creates all subclass objects / Eliminates polymorphism / Avoids inheritance  
+Answer: Controls the execution flow
+
+Question 19: In the beverage example what is the first step in the recipe?  
+Options: Boil water / Add condiments / Pour into cup / Serve beverage  
+Answer: Boil water
+
+Question 20: Which advantage is provided by centralizing workflow logic?  
+Options: Increased duplication / Simpler maintenance / More coupling / Reduced reuse  
+Answer: Simpler maintenance
+
+Question 21: Hook methods are optional and can have default implementations.  
+Options: True / False  
+Answer: True
+
+Question 22: What remains fixed in the beverage example?  
+Options: Ingredients / Condiments / Recipe structure / Subclass implementation  
+Answer: Recipe structure
+
+Question 23: Which beverage uses coffee beans and sugar or milk?  
+Options: Tea / Coffee / Both / Neither  
+Answer: Coffee
+
+Question 24: The Hollywood Principle can be summarized as Don't call us, we'll call you.  
+Options: True / False  
+Answer: True
+
+Question 25: Why is the Template Method Pattern useful?  
+Options: It eliminates inheritance / It simplifies object creation / It reduces duplicated workflow code / It converts interfaces  
+Answer: It reduces duplicated workflow code
+
+Question 26: Which principle is supported by the Template Method Pattern?  
+Options: Interface Segregation Principle / Open/Closed Principle / Dependency Inversion Principle / Law of Demeter  
+Answer: Open/Closed Principle
+
+Question 27: What is a hook method?  
+Options: A mandatory abstract method / An optional method with a default implementation / A constructor / A static utility method  
+Answer: An optional method with a default implementation
+
+Question 28: Which part of the algorithm is usually implemented in the abstract class?  
+Options: Common workflow logic / All variable steps / Only constructors / Only hook methods  
+Answer: Common workflow logic
+
+Question 29: Why does the Template Method Pattern promote consistency?  
+Options: It removes inheritance / It enforces a fixed algorithm structure / It prevents subclassing / It eliminates abstract methods  
+Answer: It enforces a fixed algorithm structure
+
+Question 30: What may reduce flexibility in a Template Method design?  
+Options: Hook methods / Deep inheritance hierarchies / Code reuse / Template methods  
+Answer: Deep inheritance hierarchies

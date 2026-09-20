@@ -1,0 +1,104 @@
+Question 1: Why did adding `fly()` to Duck superclass fail?  
+Answer: Not all ducks should fly.
+
+Question 2: What does `performQuack()` do?  
+Answer: Calls `quackBehavior.quack()`.
+
+Question 3: Delegation means:  
+Answer: Passing work to another object.
+
+Question 4: What is the main benefit of design patterns?  
+Answer: Experience reuse.
+
+Question 5: Inheritance always provides flexibility.  
+Answer: False.
+
+Question 6: Which principle is demonstrated?  
+Answer: Loose coupling.
+
+Question 7: Programming to an interface means:  
+Answer: Using abstractions instead of concrete classes.
+
+Question 8: What issue did inheritance create in the example?  
+Answer: Maintenance difficulty.
+
+Question 9: Dynamic behavior change is achieved using:  
+Answer: Setter methods.
+
+Question 10: Programming to implementation improves flexibility.  
+Answer: False.
+
+Question 11: Concrete behavior classes:  
+Answer: Implement behavior interfaces.
+
+Question 12: What replaces `fly()` in Duck?  
+Answer: `performFly()`.
+
+Question 13: Encapsulating variation reduces side effects.  
+Answer: True.
+
+Question 14: Design patterns promote experience reuse.  
+Answer: True.
+
+Question 15: Composition is a has-a relationship.  
+Answer: True.
+
+Question 16: `FlyBehavior` and `QuackBehavior` represent:  
+Answer: Interfaces.
+
+Question 17: `FlyRocketPowered` demonstrates:  
+Answer: New behavior extension.
+
+Question 18: Why is composition preferred here?  
+Answer: More flexibility.
+
+Question 19: Composition means:  
+Answer: Combining objects.
+
+Question 20: What does Duck delegate?  
+Answer: Behavior execution.
+
+Question 21: What is the key design principle introduced?  
+Answer: Encapsulate what varies.
+
+Question 22: MallardDuck sets behavior:  
+Answer: In constructor.
+
+Question 23: The relationship between Duck and behaviors is:  
+Answer: has-a.
+
+Question 24: The Strategy Pattern is illustrated by:  
+Answer: Encapsulated behaviors.
+
+Question 25: Behavior can be changed at runtime in this design.  
+Answer: True.
+
+Question 26: What problem does this design solve?  
+Answer: Rigid inheritance.
+
+Question 27: Encapsulating what varies leads to:  
+Answer: Greater flexibility.
+
+Question 28: In the SimUDuck example what problem occurred?  
+Answer: Inappropriate behavior inheritance.
+
+Question 29: What improves maintainability?  
+Answer: Encapsulation of behavior.
+
+Question 30: What is separated in the improved design?  
+Answer: Changing behaviors from stable parts.
+
+Question 31: Why are interfaces alone insufficient?  
+Answer: They reduce code reuse for behavior.
+
+Question 32: What is the constant in software development?  
+Answer: Change.
+
+Question 33: Behavior classes are:  
+Answer: Independent classes.
+
+Question 34: Behavior is assigned:  
+Answer: At runtime.
+
+Question 35: Changing behavior at runtime provides:  
+Answer: Greater adaptability.

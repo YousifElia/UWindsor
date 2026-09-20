@@ -1,0 +1,198 @@
+Question 1: A remote control delegates actions such as `LightOnCommand` and `LightOffCommand`. Which design principle is most directly supported?  
+Answer: Open-Closed Principle.
+
+Question 2: Which pattern defines the skeleton of an algorithm and lets subclasses override specific steps?  
+Answer: Template Method.
+
+Question 3: The Factory Method Pattern lets who decide which class to instantiate?  
+Answer: Subclasses.
+
+Question 4: Which pattern allows individual objects and groups of objects to be treated uniformly?  
+Answer: Composite.
+
+Question 5: Which participant in the Observer Pattern maintains a list of observers?  
+Answer: Subject.
+
+Question 6: Which pattern allows new responsibilities or behaviors to be added to an object dynamically at runtime?  
+Answer: Decorator.
+
+Question 7: Which pattern provides sequential access to elements without exposing the underlying collection representation?  
+Answer: Iterator.
+
+Question 8: What is the primary purpose of the Singleton Pattern?  
+Answer: Ensure exactly one instance exists.
+
+Question 9: Which pattern allows an object to change its behavior when its internal state changes?  
+Answer: State.
+
+Question 10: A stock application automatically updates multiple displays when stock prices change. Which pattern is most appropriate?  
+Answer: Observer.
+
+Question 11: Which pattern creates families of related objects?  
+Answer: Abstract Factory.
+
+Question 12: A media player supports MP3 files directly but uses an adapter to play MP4 files. Which pattern is being applied?  
+Answer: Adapter.
+
+Question 13: Which pattern focuses on interface simplification?  
+Answer: Facade.
+
+Question 14: Which design principle encourages programming to abstractions rather than concrete implementations?  
+Answer: Dependency Inversion Principle.
+
+Question 15: Which pattern converts one interface into another interface expected by clients?  
+Answer: Adapter.
+
+Question 16: Consider the `DataProcessor` code with `process()` as `final` and abstract `readData()` and `analyzeData()`. What design pattern is being used?  
+Answer: Template Method.
+
+Question 17: Consider the `MyInterface` and `Collection` code with `hasNext()`, `next()`, and `createMyInterface()`. What design pattern is most directly represented?  
+Answer: Iterator.
+
+Question 18: Consider the `CPU`, `Memory`, `HardDrive`, and `Computer` code. What design pattern is being used?  
+Answer: Facade.
+
+Question 19: Consider the `FileSystemItem`, `File`, and `Folder` code. What design pattern is being used?  
+Answer: Composite.
+
+Question 20: Consider the `MediaPlayer`, `MP4Player`, and `MP4Adapter` code. What design pattern is being used?  
+Answer: Adapter.
+
+Question 21: The Iterator Pattern hides the internal representation of a collection during traversal.  
+Answer: True.
+
+Question 22: The Decorator Pattern completely eliminates the use of inheritance in object-oriented design.  
+Answer: False.
+
+Question 23: The Observer Pattern establishes a one-to-many dependency between objects.  
+Answer: True.
+
+Question 24: State Pattern eliminates all state transitions from a system.  
+Answer: False.
+
+Question 25: The Adapter Pattern allows incompatible interfaces to work together.  
+Answer: True.
+
+Question 26: The Facade Pattern simplifies access to a complex subsystem.  
+Answer: True.
+
+Question 27: Template Method relies primarily on object composition to vary algorithm steps.  
+Answer: False.
+
+Question 28: The Singleton constructor is typically public.  
+Answer: False.
+
+Question 29: Composite Pattern is commonly used to represent tree structures.  
+Answer: True.
+
+Question 30: Factory Method encapsulates object creation in subclasses.  
+Answer: True.
+
+---
+
+Question 31 (Fill-in-the-Code): Complete the missing code so that the `MediaAdapter` allows a VLC player to be used through the `MediaPlayer` interface.  
+Answer:
+```
+java
+class MediaAdapter implements MediaPlayer {
+    private VLCPlayer vlcPlayer;
+
+    public MediaAdapter() {
+        vlcPlayer = new VLCPlayer();
+    }
+
+    @Override
+    public void play(String fileName) {
+        vlcPlayer.playVLC(fileName);
+    }
+}
+```
+
+Question 32 (Fill-in-the-Code): Complete the missing code so that the class follows the Singleton Pattern.  
+Answer:
+```
+java
+public class Logger {
+    private static Logger instance;
+
+    private Logger() {
+        System.out.println("Logger is created");
+    }
+
+    public static Logger getInstance() {
+        if (instance == null) {
+            instance = new Logger();
+        }
+        return instance;
+    }
+
+    public void log(String message) {
+        System.out.println(message);
+    }
+}
+```
+
+Question 33 (Fill-in-the-Code): Complete the template method.  
+Answer:
+```
+java
+public final void prepareRecipe() {
+    boilWater();
+    brew();
+    pourInCup();
+    addCondiments();
+}
+```
+
+---
+
+Question 34 (Short Answer): Explain the difference between Factory Method and Abstract Factory using a simple example.  
+Answer: Factory Method uses inheritance and lets subclasses decide which one product to create. Abstract Factory uses composition and creates families of related products.  
+Example:  
+- Factory Method: `PizzaStore.createPizza()` returns `NYStylePizza` or `ChicagoStylePizza`.  
+- Abstract Factory: `FurnitureFactory` creates `ModernChair` + `ModernTable` or `VictorianChair` + `VictorianTable`.
+
+Question 35 (Short Answer): Can you give me a simple example, something short? (Factory Method vs Abstract Factory)  
+Answer:  
+Factory Method: `abstract class PizzaStore { abstract Pizza createPizza(); }`  
+Abstract Factory: `interface FurnitureFactory { Chair createChair(); Table createTable(); }`
+
+Question 36 (Short Answer): State the Open-Closed Principle and explain how the Decorator Pattern supports it. Give an example.  
+Answer: Open-Closed Principle: classes should be open for extension but closed for modification.  
+Decorator supports it by allowing new behavior to be added through new decorator classes without modifying existing core classes or client code.  
+Example: `Coffee` + `MilkDecorator` adds cost without changing `SimpleCoffee`.
+
+Question 37 (Short Answer): Can you give me a simple example, something short? (OCP and Decorator)  
+Answer:
+```
+java
+interface Coffee { double cost(); }
+class SimpleCoffee implements Coffee { public double cost() { return 5.0; } }
+class MilkDecorator implements Coffee {
+    private Coffee coffee;
+    MilkDecorator(Coffee c) { this.coffee = c; }
+    public double cost() { return coffee.cost() + 1.5; }
+}
+// Usage: new MilkDecorator(new SimpleCoffee()).cost();
+```
+
+Question 38 (Short Answer): Can you shorten 1 and 2? (OCP and Decorator support)  
+Answer: OCP: open for extension, closed for modification. Decorator supports it by adding new decorator classes without changing existing code.
+
+Question 39 (Short Answer): Compare Adapter and Facade Patterns. Discuss Intent, Structure, and Typical use cases.  
+Answer:  
+Intent:  
+Adapter is about interface conversion. You have a class that already does what you need, but its method signatures don't match what your client expects. The Adapter acts as a translator, converting one interface into another so incompatible classes can collaborate.  
+Facade is about interface simplification. You have a complex subsystem with many interacting classes, and you want to hide that complexity behind one simple, high-level interface. The Facade doesn't convert interfaces—it provides a completely new, easier-to-use API.  
+
+Structure:  
+Adapter wraps a single object (the Adaptee). It implements the Target interface expected by the client and delegates all calls to the Adaptee, translating parameters or method names as needed. The relationship is composition: the Adapter holds a reference to the Adaptee.  
+Facade wraps a whole subsystem of many objects. It references multiple subsystem classes (like DVD player, lights, sound system) and coordinates their interactions internally. The client talks only to the Facade, which then delegates the work to the appropriate subsystem components in the correct order.  
+
+Typical Use Cases:  
+Adapter is used when integrating legacy code into a new system without modifying the old code; wrapping a third-party library that has a different interface than what your application expects; maintaining backward compatibility while introducing new implementations; you cannot modify the existing class, so you put a wrapper around it.  
+Facade is used when a subsystem is too complex for clients to use directly; you want to decouple clients from the internals of a subsystem to reduce dependencies; you need to define a clear entry point for a layer or module in your architecture; you want to simplify a large library or API for common use cases.  
+
+Real-Life Analogy:  
+Adapter is like a power plug adapter—the electricity is the same, but the physical shape of the plug doesn't fit the socket, so you put an adapter in between to make them connect.  
+Facade is like a hotel reception desk—instead of calling housekeeping, room service, and maintenance separately, you talk to one receptionist who handles everything for you.

@@ -1,0 +1,119 @@
+Question 1: In the home theater example, which component is NOT part of the subsystem?  
+Options: DVD Player / Projector / Sound System / Adapter  
+Answer: Adapter
+
+Question 2: The Adapter Pattern promotes code reuse.  
+Options: True / False  
+Answer: True
+
+Question 3: What is the primary intent of the Adapter Pattern?  
+Options: Provide a simplified interface to a subsystem / Convert one interface into another expected by the client / Encapsulate object creation / Separate abstraction from implementation  
+Answer: Convert one interface into another expected by the client
+
+Question 4: Which real-world analogy was used for the Facade Pattern?  
+Options: Phone charger adapter / Hotel reception desk / Media player / Database connector  
+Answer: Hotel reception desk
+
+Question 5: In the media player example, what file type was originally supported by the application?  
+Options: VLC / MP3 / MP4 / WAV  
+Answer: MP3
+
+Question 6: A hotel reception desk is an analogy for the Adapter Pattern.  
+Options: True / False  
+Answer: False
+
+Question 7: What is an advantage of the Facade Pattern?  
+Options: Simplifies client usage / Eliminates subsystem classes / Prevents inheritance / Reduces polymorphism  
+Answer: Simplifies client usage
+
+Question 8: The Facade Pattern primarily reduces:  
+Options: Execution time / Memory usage / Coupling between client and subsystem / Inheritance depth  
+Answer: Coupling between client and subsystem
+
+Question 9: Which participant converts requests from the Target interface to the Adaptee interface?  
+Options: Client / Target / Adapter / Facade  
+Answer: Adapter
+
+Question 10: Why is the Adapter Pattern useful when integrating third-party libraries?  
+Options: It allows incompatible interfaces to work together / It reduces memory usage / It removes all dependencies / It creates subsystem objects  
+Answer: It allows incompatible interfaces to work together
+
+Question 11: A disadvantage of the Facade Pattern is:  
+Options: Increased coupling / No abstraction / Facade may become a God Object / Reduced maintainability  
+Answer: Facade may become a God Object
+
+Question 12: In the Adapter Pattern, the Adaptee is:  
+Options: The client interface / An existing class with an incompatible interface / A simplified subsystem / A factory class  
+Answer: An existing class with an incompatible interface
+
+Question 13: What problem does the Adapter Pattern solve?  
+Options: Object creation complexity / Excessive inheritance / Incompatible interfaces / Memory management  
+Answer: Incompatible interfaces
+
+Question 14: Which pattern is best for simplifying access to a complex subsystem?  
+Options: Adapter / Facade / Strategy / Observer  
+Answer: Facade
+
+Question 15: What does the Facade Pattern hide from clients?  
+Options: Object creation / Inheritance hierarchies / Subsystem complexity / Data structures  
+Answer: Subsystem complexity
+
+Question 16: What does the client interact with in the Facade Pattern?  
+Options: All subsystem classes directly / The Facade object / Only the database / The Target interface  
+Answer: The Facade object
+
+Question 17: Which participant performs the actual work in the Facade Pattern?  
+Options: Client / Subsystem Classes / Adapter / Target  
+Answer: Subsystem Classes
+
+Question 18: The Adaptee is the interface expected by the client.  
+Options: True / False  
+Answer: False
+
+Question 19: Which real-world analogy was used for the Adapter Pattern?  
+Options: Hotel reception desk / Remote control / Phone charger adapter / Home theater  
+Answer: Phone charger adapter
+
+Question 20: A Facade performs all subsystem work itself.  
+Options: True / False  
+Answer: False
+
+Question 21: Which pattern focuses on interface compatibility?  
+Options: Adapter / Facade / Observer / Factory Method  
+Answer: Adapter
+
+Question 22: When should the Adapter Pattern be used?  
+Options: When existing interfaces are incompatible / When creating object families / When simplifying a subsystem / When implementing undo operations  
+Answer: When existing interfaces are incompatible
+
+Question 23: The Facade Pattern hides subsystem complexity from clients.  
+Options: True / False  
+Answer: True
+
+Question 24: Which participant represents the interface expected by the client in the Adapter Pattern?  
+Options: Target / Adaptee / Facade / Subsystem  
+Answer: Target
+
+Question 25: Which pattern focuses on interface simplification?  
+Options: Adapter / Facade / Decorator / Strategy  
+Answer: Facade
+
+Question 26: Which pattern is best for integrating legacy code without modification?  
+Options: Facade / Adapter / Observer / Command  
+Answer: Adapter
+
+Question 27: What is the primary intent of the Facade Pattern?  
+Options: Provide a simplified unified interface to a subsystem / Convert incompatible interfaces / Encapsulate requests as objects / Create objects dynamically  
+Answer: Provide a simplified unified interface to a subsystem
+
+Question 28: A disadvantage of the Adapter Pattern is:  
+Options: Reduced code reuse / Additional abstraction layers / Tight coupling / Limited extensibility  
+Answer: Additional abstraction layers
+
+Question 29: The Adapter Pattern allows incompatible interfaces to work together.  
+Options: True / False  
+Answer: True
+
+Question 30: Which design principle is supported by the Adapter Pattern?  
+Options: Dependency Inversion Principle / Single Responsibility Principle / Open/Closed Principle / Liskov Substitution Principle  
+Answer: Open/Closed Principle

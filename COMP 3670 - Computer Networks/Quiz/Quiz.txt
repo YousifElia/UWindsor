@@ -1,0 +1,79 @@
+Question 1: In packet-switched networks, queueing delay and packet loss may occur under certain conditions. When are packets most likely to be dropped at the router?  
+Options: When packets are transmitted over fiber-optic links / When propagation speed exceeds the speed of light / When routers have unlimited memory buffers / When the packet arrival rate exceeds the transmission rate and router buffers become full  
+Answer: When the packet arrival rate exceeds the transmission rate and router buffers become full
+
+Question 2: We have explained the store-and-forward mechanism used in packet-switched networks. Which statement is CORRECT regarding store-and-forward operation?  
+Options: The router must receive the complete packet before forwarding it onto the next link. / Store-and-forward only applies to wireless communication systems. / A router begins transmitting a packet before fully receiving it. / Packets are always stored at the router before forwarding it to the next router to guarantee it is not malicious.  
+Answer: The router must receive the complete packet before forwarding it onto the next link.
+
+Question 3: The Internet is commonly referred to as a “network of networks.” Which of the following scenarios BEST demonstrates this concept?  
+Options: A smartphone connecting directly to a Bluetooth headset. / A laptop communicating with a printer through a USB cable. / A single router connecting multiple computers inside one laboratory room. / Multiple independent networks such as home networks, institutional networks, and mobile networks interconnected through ISPs.  
+Answer: Multiple independent networks such as home networks, institutional networks, and mobile networks interconnected through ISPs.
+
+Question 4: Which of the following describes IP spoofing as mentioned in the lecture?  
+Options: Using outdated protocols for interception / Sending large packets to overload memory / Sending packets with a forged source IP address / Manipulating DNS records to redirect users  
+Answer: Sending packets with a forged source IP address
+
+Question 5: Which of the following physical media discussed in the lecture is classified as guided media?  
+Options: Radio waves used in WiFi communication / Satellite communication channels / Twisted-pair copper cables / Microwave propagation through free space  
+Answer: Twisted-pair copper cables
+
+Question 6: We introduced Denial of Service (DoS) attacks as a major network security threat. Which of the following BEST describes the primary goal of a DoS attack?  
+Options: To overwhelm network or server resources so legitimate users cannot access services / To accelerate packet forwarding performance in routers / To physically destroy all routers connected to the Internet / To improve network throughput by increasing traffic volume  
+Answer: To overwhelm network or server resources so legitimate users cannot access services
+
+Question 7: In the layered architecture of the Internet discussed in Computer Networking: A Top-Down Approach, which of the following statements BEST describes the relationship among end systems, communication links, and packet switches when a user accesses a remote web server through the Internet?  
+Options: End systems run network applications, communication links carry data, and packet switches such as routers forward packets toward their destinations. / Communication links are responsible for running applications such as HTTP and SMTP, while routers only provide physical connectivity. / End systems only generate signals, while packet switches permanently store all transmitted data before forwarding it to the final destination. / Packet switches are only required in wireless networks because wired networks can directly connect all hosts together.  
+Answer: End systems run network applications, communication links carry data, and packet switches such as routers forward packets toward their destinations.
+
+Question 8: One major advantage of layering in networking systems is modularization. Which of the following BEST explains this advantage?  
+Options: Layering guarantees zero packet loss in communication systems. / Changes within one layer can often be made without affecting the entire system. / Layering eliminates the need for routers and switches. / Every network layer must use identical protocols and hardware devices.  
+Answer: Changes within one layer can often be made without affecting the entire system.
+
+Question 9: In the host sending function, a host breaks an application-layer message into smaller chunks called packets before transmission. If a packet has length L bits and the transmission rate is R bits per second, which formula gives the transmission delay?  
+Options: R/L / LR / L/R / R^2/L  
+Answer: L/R
+
+Question 10: In the context of access networks introduced in the lecture, which of the following examples BEST represents an institutional access network?  
+Options: A satellite communication system connecting continents. / A cellular 5G network provided by a telecom company. / A university campus network connecting classrooms, laboratories, and offices to the Internet. / A Bluetooth personal area network between a laptop and wireless mouse.  
+Answer: A university campus network connecting classrooms, laboratories, and offices to the Internet.
+
+Question 11: In the layered Internet protocol stack presented in the lecture, which layer is primarily responsible for routing datagrams from source to destination?  
+Options: Network layer / Application layer / Transport layer / Link layer  
+Answer: Network layer
+
+Question 12: In comparing cable access networks and DSL access networks, which of the following statements BEST reflects the major difference highlighted in the lecture?  
+Options: Cable networks typically share the access medium among households, whereas DSL provides dedicated access to the central office. / DSL networks cannot support Internet access and are limited to voice communication only. / DSL networks are shared among many households, while cable networks provide dedicated bandwidth to each home. / Cable networks use telephone lines exclusively, while DSL networks use optical fibers only.  
+Answer: Cable networks typically share the access medium among households, whereas DSL provides dedicated access to the central office.
+
+Question 13: For network delays, which component of nodal delay corresponds to the time spent examining packet headers and determining the correct outgoing link?  
+Options: Queueing delay / Propagation delay / Transmission delay / Processing delay  
+Answer: Processing delay
+
+Question 14: In the network core, routers perform packet switching. Which of the following statements BEST describes packet switching?  
+Options: Routers forward packets from one link to another toward the destination. / Communication only occurs between neighboring hosts without intermediate devices. / Data is transmitted without being divided into packets. / A dedicated communication circuit is permanently reserved between sender and receiver.  
+Answer: Routers forward packets from one link to another toward the destination.
+
+Question 15: The Internet is often described as a network of networks. What key feature enables independent networks to interconnect and communicate seamlessly?  
+Options: Manual routing tables / Shared encryption keys / Bandwidth modulation / Use of standardized communication protocols  
+Answer: Use of standardized communication protocols
+
+Question 16: The lecture discussed wireless access networks such as WiFi and cellular networks. Which of the following statements about wireless LANs is CORRECT?  
+Options: Wireless LANs cannot connect to the Internet through routers. / Wireless LANs generally operate over distances of thousands of kilometers. / Wireless LANs such as WiFi commonly use IEEE 802.11 standards for communication. / Wireless LANs always provide faster transmission rates than fiber-optic communication systems.  
+Answer: Wireless LANs such as WiFi commonly use IEEE 802.11 standards for communication.
+
+Question 17: For network security, malware was categorized into several types. Which of the following statements correctly distinguishes a worm from a virus?  
+Options: A worm requires manual installation, while a virus never replicates itself. / A virus spreads through passive wireless transmission only. / Viruses and worms are unrelated to malicious software. / A worm can self-replicate and spread automatically without requiring user execution of infected files.  
+Answer: A worm can self-replicate and spread automatically without requiring user execution of infected files.
+
+Question 18: We have carefully distinguished between transmission delay and propagation delay. Which of the following statements BEST describes transmission delay?  
+Options: The time required for packets to wait inside router queues only. / The time required for a signal to travel across the physical medium from one device to another. / The time needed to push all packet bits into the communication link. / The time routers spend calculating routing algorithms.  
+Answer: The time needed to push all packet bits into the communication link.
+
+Question 19: Propagation delay uses the formula (d/s). In this formula, what does the variable (s) represent?  
+Options: Router switching capacity / Queue size inside the router / Packet size in bits / Signal propagation speed in the medium  
+Answer: Signal propagation speed in the medium
+
+Question 20: In the caravan analogy presented in the lecture, cars represented bits and the caravan represented a packet. What networking concept was this analogy mainly intended to explain?  
+Options: Queueing delay / Processing delay / Transmission and propagation delays / Packet loss  
+Answer: Transmission and propagation delays

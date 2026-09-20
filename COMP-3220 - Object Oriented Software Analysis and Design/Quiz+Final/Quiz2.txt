@@ -1,0 +1,104 @@
+Question 1: What design principle is violated in the naive approach in object-oriented software analysis?  
+Answer: Open/Closed Principle
+
+Question 2: In the weather station example what is the Subject?  
+Answer: WeatherData
+
+Question 3: Which component updates displays?  
+Answer: Observer using subject data
+
+Question 4: Observer Pattern reduces:  
+Answer: Dependency between components
+
+Question 5: Observers must know the concrete subject class.  
+Answer: False
+
+Question 6: What happens when subject state changes?  
+Answer: Observers are notified
+
+Question 7: The key structure involves:  
+Answer: Subject and observers
+
+Question 8: What is the main issue with directly updating displays in WeatherData?  
+Answer: Tight coupling
+
+Question 9: Adding new displays in the naive implementation requires:  
+Answer: Modifying WeatherData
+
+Question 10: WeatherData uses getters to:  
+Answer: Provide data to observers
+
+Question 11: Observer Pattern reduces flexibility.  
+Answer: False
+
+Question 12: In Observer Pattern  
+Answer: Maintaining observer list
+
+Question 13: The Observer Pattern defines what type of relationship?  
+Answer: One-to-many
+
+Question 14: Loose coupling allows independent changes.  
+Answer: True
+
+Question 15: What triggers updates in observers?  
+Answer: State change in subject
+
+Question 16: Observers must implement:  
+Answer: Observer interface
+
+Question 17: Observers update themselves using:  
+Answer: Data from subject
+
+Question 18: Observer Pattern is useful when:  
+Answer: Multiple objects depend on one object
+
+Question 19: Observers depend on:  
+Answer: Subject state
+
+Question 20: Loose coupling means:  
+Answer: Minimal knowledge of each other
+
+Question 21: Expandability in Observer Pattern means:  
+Answer: Easily adding new observers
+
+Question 22: What does the Subject know about observers?  
+Answer: Only their interface
+
+Question 23: Which is NOT a benefit of Observer Pattern?  
+Answer: Tight coupling
+
+Question 24: Observer Pattern enables one-to-many dependency.  
+Answer: True
+
+Question 25: Subject notifying observers is called:  
+Answer: Notification
+
+Question 26: Observer Pattern promotes:  
+Answer: Loose coupling
+
+Question 27: Observers in the weather system are:  
+Answer: Display elements
+
+Question 28: Observers can be removed at runtime.  
+Answer: True
+
+Question 29: What method is called when new data arrives?  
+Answer: measurementsChanged()
+
+Question 30: The Subject typically provides methods to:  
+Answer: Register and remove observers
+
+Question 31: What is the main purpose of the Observer Pattern?  
+Answer: Notify dependent objects automatically
+
+Question 32: What is the benefit of loose coupling?  
+Answer: Flexibility and extensibility
+
+Question 33: Observers can be:  
+Answer: Added or removed at runtime
+
+Question 34: Subject must know observer implementation details.  
+Answer: False
+
+Question 35: Observer Pattern supports:  
+Answer: Dynamic relationships

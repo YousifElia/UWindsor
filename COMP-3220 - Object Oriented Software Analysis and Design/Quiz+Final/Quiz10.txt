@@ -1,0 +1,119 @@
+Question 1: According to the State Pattern an object appears to do what at runtime?
+Options: Change its interface / Change its constructor / Change its class / Change its inheritance hierarchy
+Answer: Change its class
+
+Question 2: Which of the following is mentioned as a motivation example?
+Options: Binary search tree / Vending machine / Compiler / Database index
+Answer: Vending machine
+
+Question 3: In the Paused state what happens when the user presses Play?
+Options: No effect / Music stops / Music restarts from the beginning / Music resumes
+Answer: Music resumes
+
+Question 4: What does the State participant define?
+Options: Database operations / Object creation rules / State-specific operations / Traversal algorithms
+Answer: State-specific operations
+
+Question 5: When Pause is pressed in PlayingState the player transitions to which state?
+Options: StoppedState / BufferingState / ListeningState / PausedState
+Answer: PausedState
+
+Question 6: Why is the State Pattern easier to maintain?
+Options: All code is placed in one class / State logic is localized / No interfaces are needed / No transitions exist
+Answer: State logic is localized
+
+Question 7: In the Stopped state what happens when the user presses Play?
+Options: Music starts / Music pauses / No effect / Application closes
+Answer: Music starts
+
+Question 8: In the Playing state what happens when the user presses Pause?
+Options: Music starts / No effect / Music pauses / The application exits
+Answer: Music pauses
+
+Question 9: How does the Client interact in the State Pattern?
+Options: Through the Context / Directly with all Concrete States / Only with interfaces / Only with constructors
+Answer: Through the Context
+
+Question 10: The key insight of the State Pattern is to delegate work to the current state object.
+Options: True / False
+Answer: True
+
+Question 11: Which example is used to explain the State Pattern in the lecture?
+Options: Shopping Cart / Music Player / Library System / ATM
+Answer: Music Player
+
+Question 12: What is one benefit of encapsulating state-specific behavior?
+Options: Improved readability / Reduced memory usage / Eliminated inheritance / Fewer interfaces
+Answer: Improved readability
+
+Question 13: What is a common disadvantage of the State Pattern?
+Options: Prevents extensibility / Eliminates encapsulation / Removes abstraction / Increases the number of classes
+Answer: Increases the number of classes
+
+Question 14: Which problem is directly solved by the State Pattern?
+Options: Circular dependencies / Multiple inheritance / Large conditional statements / Object serialization
+Answer: Large conditional statements
+
+Question 15: The State Pattern is often used instead of large collections of what?
+Options: Interfaces / Constructors / Collections / if-else or switch statements
+Answer: if-else or switch statements
+
+Question 16: What is the primary intent of the State Pattern?
+Options: Create families of related objects / Allow an object to alter its behavior when its internal state changes / Provide sequential access to collections / Separate object creation from usage
+Answer: Allow an object to alter its behavior when its internal state changes
+
+Question 17: In the State Pattern behavior is delegated to what?
+Options: State objects / Utility classes / Clients / Factories
+Answer: State objects
+
+Question 18: The behavior of an object in the State Pattern depends on its current state.
+Options: True / False
+Answer: True
+
+Question 19: What is the role of Concrete State classes?
+Options: Create clients / Manage databases / Provide logging / Implement behavior for each state
+Answer: Implement behavior for each state
+
+Question 20: What is the responsibility of the Context participant?
+Options: Create all objects / Maintain the current state / Store persistent data / Provide utility methods
+Answer: Maintain the current state
+
+Question 21: The State Pattern encourages spreading more conditional statements throughout the code.
+Options: True / False
+Answer: False
+
+Question 22: Which state belongs to the TCP connection example?
+Options: Dispensing / Paused / Established / Shipped
+Answer: Established
+
+Question 23: In the music player example what is the initial state?
+Options: PausedState / StoppedState / PlayingState / BufferingState
+Answer: StoppedState
+
+Question 24: When might the State Pattern be considered overkill?
+Options: When there are only a few simple states / When many states exist / When polymorphism is used / When transitions are important
+Answer: When there are only a few simple states
+
+Question 25: Which of the following is listed as an advantage of the State Pattern?
+Options: Makes state transitions explicit / Eliminates all objects / Removes inheritance / Requires only one class
+Answer: Makes state transitions explicit
+
+Question 26: Which design principle is supported by the State Pattern?
+Options: Single Responsibility Principle / Interface Segregation Principle / Law of Demeter / Open/Closed Principle
+Answer: Open/Closed Principle
+
+Question 27: How can new states usually be added in a State Pattern design?
+Options: By rewriting the Context class completely / By removing interfaces / By adding new state classes / By eliminating polymorphism
+Answer: By adding new state classes
+
+Question 28: After pressing Play in StoppedState the player transitions to which state?
+Options: PausedState / BufferingState / PlayingState / ClosedState
+Answer: PlayingState
+
+Question 29: Which state belongs to the online order example?
+Options: Listening / Buffering / HasCoin / Cancelled
+Answer: Cancelled
+
+Question 30: Which state belongs to a vending machine example from the lecture?
+Options: Buffering / HasCoin / Delivered / Listening
+Answer: HasCoin

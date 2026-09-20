@@ -1,0 +1,89 @@
+Question 1: Composition is used instead of inheritance in the Decorator Pattern.  
+Answer: True
+
+Question 2: What does delegation mean in this pattern?  
+Answer: Forwarding calls to wrapped object
+
+Question 3: What drawback might decorators introduce?  
+Answer: Many small objects
+
+Question 4: The Decorator Pattern replaces inheritance with:  
+Answer: Composition
+
+Question 5: What principle is supported by Decorator Pattern?  
+Answer: Open-Closed Principle
+
+Question 6: What problem does the Decorator Pattern primarily solve?  
+Answer: Class explosion due to inheritance
+
+Question 7: In the coffee example, condiments are:  
+Answer: Decorators
+
+Question 8: Decorators can be applied:  
+Answer: Multiple times
+
+Question 9: The relationship between decorator and component is:  
+Answer: has-a and is-a
+
+Question 10: When cost() is called on outer decorator:  
+Answer: Calls are delegated through chain
+
+Question 11: Open-Closed Principle means:  
+Answer: Open for extension
+
+Question 12: What happens when many features are added using inheritance?  
+Answer: Combinatorial class explosion
+
+Question 13: Decorators can add behavior:  
+Answer: Before and/or after delegation
+
+Question 14: Decorators must have:  
+Answer: Same supertype as component
+
+Question 15: Which is NOT a benefit of Decorator Pattern?  
+Answer: Simpler class hierarchy always
+
+Question 16: Decorator Pattern increases reliance on inheritance.  
+Answer: False
+
+Question 17: Which call computes final cost?  
+Answer: Outermost decorator
+
+Question 18: Adding new behavior requires:  
+Answer: Adding new decorator class
+
+Question 19: Decorators add behavior:  
+Answer: Dynamically at runtime
+
+Question 20: Decorators can be stacked.  
+Answer: True
+
+Question 21: In naive designs variations are often implemented using:  
+Answer: Inheritance
+
+Question 22: Decorator Pattern allows dynamic behavior addition.  
+Answer: True
+
+Question 23: Decorator Pattern supports Open-Closed Principle.  
+Answer: True
+
+Question 24: What is the base component in the Starbuzz example?  
+Answer: Beverage
+
+Question 25: Decorators are best described as:  
+Answer: Wrappers
+
+Question 26: Decorators must modify the base class.  
+Answer: False
+
+Question 27: What provides flexibility in this pattern?  
+Answer: Runtime composition
+
+Question 28: What is the key idea of the Decorator Pattern?  
+Answer: Wrap objects with additional behavior
+
+Question 29: What is avoided by using decorators?  
+Answer: Modifying existing classes
+
+Question 30: Why must decorators share the same supertype?  
+Answer: To substitute decorated objects transparently

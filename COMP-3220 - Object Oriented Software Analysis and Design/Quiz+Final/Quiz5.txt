@@ -1,0 +1,87 @@
+Question 1: Double-checked locking is used to:
+Options: Increase coupling / Improve performance in thread-safe Singleton / Reduce abstraction / Eliminate objects
+Answer: Improve performance in thread-safe Singleton
+
+Question 2: Singleton violates which principle often?
+Options: Encapsulation / Single Responsibility Principle / Polymorphism / Inheritance
+Answer: Single Responsibility Principle
+
+Question 3: Eager initialization means:
+Options: Instance created on demand / Instance created at class loading time / Instance created manually / Instance never created
+Answer: Instance created at class loading time
+
+Question 4: How is the single instance typically accessed?
+Options: Direct instantiation / Static method / Constructor call / Inheritance
+Answer: Static method
+
+Question 5: Which scenario is suitable for Singleton?
+Options: User objects / Configuration manager / Temporary variables / Loop counters
+Answer: Configuration manager
+
+Question 5 (repeated): Which scenario is suitable for Singleton?
+Options: User objects / Configuration manager / Temporary variables / Loop counters
+Answer: Configuration manager
+
+Question 6: Singleton introduces global state.
+Options: True / False
+Answer: True
+
+Question 7: Which technique ensures thread safety?
+Options: Inheritance / Synchronization / Recursion / Overloading
+Answer: Synchronization
+
+Question 8: Lazy initialization means:
+Options: Instance created at compile time / Instance created when first needed / Instance created always / Instance deleted immediately
+Answer: Instance created when first needed
+
+Question 9: Which of the following is a key characteristic of a Singleton?
+Options: Public constructor / Private constructor / Multiple instances / Static inheritance
+Answer: Private constructor
+
+Question 10: Singleton ensures only one instance exists.
+Options: True / False
+Answer: True
+
+Question 11: What issue arises in multithreaded Singleton?
+Options: Syntax error / Multiple instances may be created / Compilation failure / No issue
+Answer: Multiple instances may be created
+
+Question 12: Lazy initialization improves resource usage.
+Options: True / False
+Answer: True
+
+Question 13: Why is constructor private in Singleton?
+Options: Improve performance / Prevent external instantiation / Enable inheritance / Allow multiple objects
+Answer: Prevent external instantiation
+
+Question 14: Singleton allows direct use of new keyword.
+Options: True / False
+Answer: False
+
+Question 15: What is the main purpose of the Singleton Pattern?
+Options: Improve performance / Ensure only one instance of a class exists / Allow multiple instances / Simplify inheritance
+Answer: Ensure only one instance of a class exists
+
+Question 16: What problem does Singleton help solve?
+Options: Memory leaks / Controlling access to shared resources / Syntax errors / Compilation issues
+Answer: Controlling access to shared resources
+
+Question 17: Which keyword is commonly used for Singleton instance?
+Options: final / static / abstract / extends
+Answer: static
+
+Question 18: Singleton provides:
+Options: Multiple access points / Global access point / No access / Local variables
+Answer: Global access point
+
+Question 19: Which is NOT a valid Singleton implementation approach?
+Options: Eager initialization / Lazy initialization / Enum Singleton / Multiple constructors
+Answer: Multiple constructors
+
+Question 20: Singleton is always thread-safe by default.
+Options: True / False
+Answer: False
+
+Question 21: What is a drawback of Singleton?
+Options: Too many instances / Global state and tight coupling / Low memory usage / Simple design
+Answer: Global state and tight coupling

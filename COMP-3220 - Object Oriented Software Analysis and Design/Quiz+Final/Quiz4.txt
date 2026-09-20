@@ -1,0 +1,124 @@
+Question 1: Using new everywhere improves maintainability.  
+Options: True / False  
+Answer: False
+
+Question 2: Factory Method improves:  
+Options: Tight coupling / Decoupling / Inheritance depth / Compilation speed  
+Answer: Decoupling
+
+Question 3: Factory Method reduces dependency on concrete classes.  
+Options: True / False  
+Answer: True
+
+Question 4: Abstract Factory creates:  
+Options: Single object / Families of related objects / Static objects / Interfaces only  
+Answer: Families of related objects
+
+Question 5: SimplePizzaFactory is responsible for:  
+Options: Selling pizzas / Creating pizza objects / Displaying UI / Managing orders  
+Answer: Creating pizza objects
+
+Question 6: Dependency Inversion promotes dependence on concrete classes.  
+Options: True / False  
+Answer: False
+
+Question 7: Which is NOT a benefit of Factory Pattern?  
+Options: Flexibility / Encapsulation / Direct control over all classes / Decoupling  
+Answer: Direct control over all classes
+
+Question 8: Factory Method is usually:  
+Options: Concrete method / Abstract method / Static method / Private method  
+Answer: Abstract method
+
+Question 9: What does a factory primarily do?  
+Options: Executes business logic / Creates objects / Stores data / Handles UI  
+Answer: Creates objects
+
+Question 10: Factory Method Pattern allows:  
+Options: Only base class creation / Subclasses to decide object creation / Static binding / No inheritance  
+Answer: Subclasses to decide object creation
+
+Question 11: Ingredient factory is an example of:  
+Options: Singleton / Abstract Factory / Decorator / Observer  
+Answer: Abstract Factory
+
+Question 12: Moving object creation out of client code improves:  
+Options: Coupling / Flexibility / Complexity / Execution time  
+Answer: Flexibility  
+Follow-up clarification: The slide says it “reduces coupling” and “improves extensibility,” so the option that matches “improves” is Flexibility.
+
+Question 13: Why is tying code to concrete classes problematic?  
+Options: It improves flexibility / It makes code fragile to change / It simplifies design / It reduces coupling  
+Answer: It makes code fragile to change
+
+Question 14: What does orderPizza() rely on?  
+Options: Concrete classes / Abstract product (Pizza) / Database / Compiler  
+Answer: Abstract product (Pizza)
+
+Question 15: Factory Method allows subclasses to decide instantiation.  
+Options: True / False  
+Answer: True
+
+Question 16: After introducing a factory, PizzaStore becomes:  
+Options: Creator / Client of factory / Database / Controller  
+Answer: Client of factory
+
+Question 17: What varies in PizzaStore example?  
+Options: Order process / Type of pizza created / Customer data / UI  
+Answer: Type of pizza created
+
+Question 18: What is the key idea behind Factory Pattern?  
+Options: Increase inheritance / Encapsulate object creation / Reduce objects / Use static methods  
+Answer: Encapsulate object creation
+
+Question 19: Dependency Inversion Principle suggests:  
+Options: Depend on concrete classes / Depend on abstractions / Avoid interfaces / Use static methods  
+Answer: Depend on abstractions
+
+Question 20: Which principle is supported by Factory Method?  
+Options: Tight coupling / Open-Closed Principle / Global state / Procedural design  
+Answer: Open-Closed Principle
+
+Question 21: Factory Pattern helps achieve:  
+Options: Tight coupling / Loose coupling / Global state / Procedural logic  
+Answer: Loose coupling
+
+Question 22: Abstract Factory creates families of related objects.  
+Options: True / False  
+Answer: True
+
+Question 23: What benefit does Abstract Factory provide?  
+Options: Less abstraction / Consistency across product families / More duplication / Static behavior  
+Answer: Consistency across product families
+
+Question 24: What problem does factory solve in PizzaStore?  
+Options: Memory issues / Object creation complexity / Syntax errors / UI problems  
+Answer: Object creation complexity
+
+Question 25: What is the main issue with using the new operator directly in code?  
+Options: It causes syntax errors / It ties code to concrete classes / It reduces performance / It increases abstraction  
+Answer: It ties code to concrete classes
+
+Question 26: Parallel hierarchies refer to:  
+Options: Independent classes / Creator and Product hierarchies / Database tables / UI layers  
+Answer: Creator and Product hierarchies
+
+Question 27: Factory Method uses:  
+Options: Composition only / Inheritance and polymorphism / Static binding / Global variables  
+Answer: Inheritance and polymorphism
+
+Question 28: Factory Method defers instantiation to:  
+Options: Compiler / Subclasses / Database / Interfaces  
+Answer: Subclasses
+
+Question 29: High-level modules should depend on:  
+Options: Low-level modules / Abstractions / Concrete classes / Databases  
+Answer: Abstractions
+
+Question 30: Factory Pattern encapsulates object creation.  
+Options: True / False  
+Answer: True
+
+Question 31: What happens when directly instantiating objects?  
+Options: Loose coupling / Strong dependency / More abstraction / Better reuse  
+Answer: Strong dependency

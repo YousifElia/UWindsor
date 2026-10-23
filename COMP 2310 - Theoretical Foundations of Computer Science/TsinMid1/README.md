@@ -3,10 +3,10 @@
 ### Note: Tsin does NOT (VERY IMPORTANT DOES NOT) repeat questions for his midterm, this is just to understand how his midterm will be (you’re given 3hrs, so use your time wisely)
 
 ## Q1: 
-(W v P) => T
-T => (C v S)
-S => U
-~C ∧ ~U
+1. (W v P) => T
+2. T => (C v S)
+3. S => U
+4. ~C ∧ ~U
 
 Hint: Use proof by contradiction because you can solve it in a couple of lines
 

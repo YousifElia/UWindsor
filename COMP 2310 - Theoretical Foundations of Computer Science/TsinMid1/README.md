@@ -33,5 +33,5 @@ Premise 5: One can always trust a very communicative person
 Hint: U = People/ Person, Denote, then create your FOL
 
 ### Good Luck!
-#### Words of Wisdom: Be Formal, be Rigorous, be Precise (ex. -> is wrong, => is correct, you will lose marks), Don’t skip steps. Watch his videos, as he monitors who views them, and watch how he solves the problems
+#### Words of Wisdom: Be Formal, be RIGOROUS, be Precise (ex. -> is wrong, => is correct, you will lose marks), Don’t skip steps. Watch his videos, as he monitors who views them, and watch how he solves the problems; also Tsin is marking the Midterm so TA’s might be lenient, whilst Tsin won’t be.
 #### Memorize Definitions for Mid2

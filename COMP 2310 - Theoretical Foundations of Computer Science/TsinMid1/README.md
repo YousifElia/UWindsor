@@ -1,18 +1,33 @@
 # TSIN MIDTERM 1 - QUESTIONS
 
-Note: Tsin does NOT (VERY IMPORTANT DOES NOT) repeat questions for his midterm, this is just to understand how his midterm will be (you’re given 3hrs, so use your time wisely)
+### Note: Tsin does NOT (VERY IMPORTANT DOES NOT) repeat questions for his midterm, this is just to understand how his midterm will be (you’re given 3hrs, so use your time wisely)
 
-Q1: 
-(W or P) => T
-T => (C or S)
+## Q1: 
+(W v P) => T
+T => (C v S)
 S => U
-~C and ~U
+~C ∧ ~U
 
 Hint: Use proof by contradiction because you can solve it in a couple of lines
 
-Q2: Evaluate
-(For all (x))(For some (y))(P(y,x) => (For some (x))(Q(x) and P(x,y)))
+## Q2: Evaluate
+(∀(x))(∃(y))(P(y,x) => (∃(x))(Q(x) ∧ P(x,y)))
 
 Hint: Make sure you look at the scope of the FOL
 
-Q3: Prove Premise 1, Premise 2 ⊢ C
+## Q3: Prove Premise 1, Premise 2 ⊢ C
+(∀x)(∃y)(~P(x) v (Q(y) ∧ T(x,y) ∧ ~S(x,y)))
+(∃x)(∀y)(P(x) ∧ ((Q(y) ∧ R(x,y)) => S(x,y)))
+
+Hint: Make sure you check which variables are free/ need changing
+
+## Q4: Convert them in FOL 
+Premise 1: Anyone who does not keep his promise is untrustworthy
+Premise 2: Wine-drinkers are very communicative
+Premise 3: Anyone who keeps his promise is honest
+Premise 4: No non wine-drinkers are writers
+Premise 5: One can always trust a very communicative person
+
+### Good Luck!
+#### Words of Wisdom: Be Formal, be Rigorous, be Precise (ex. -> is wrong, => is correct, you will lose marks), Don’t skip steps. Watch his videos, as he monitors who views them, and watch how he solves the problems
+#### Memorize Definitions for Mid2
